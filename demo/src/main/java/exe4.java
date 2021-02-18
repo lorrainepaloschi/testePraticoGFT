@@ -13,7 +13,7 @@ public class exe4 {
             return this.valor;
         }
 
-        public void setValor(int valor) {
+        public void setValor(final int valor) {
             this.valor = valor;
         }
 
@@ -21,15 +21,17 @@ public class exe4 {
             return this.peso;
         }
 
-        public void setPeso(double peso) {
+        public void setPeso(final double peso) {
             this.peso = peso;
         }
 
-        public class Vagao extends Transporte{
+        public double calculaFrete(peso, valor);
 
-        }
-        public class Caminhao extends Transporte{
-            
-        }
+    }
+    public class Vagao extends Transporte{
+        
+    }
+    public class Caminhao extends Transporte{
+
     }
 }
