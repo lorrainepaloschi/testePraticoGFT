@@ -33,12 +33,22 @@ public class exe4 {
             if (peso<15000){
                 return (peso*0,2)+(valor*0,1)+ 5000; 
             }
-            return (peso*0,2)+(valor*0,1);   
+            else{
+                return (peso*0,2)+(valor*0,1); 
+            }
+              
         }
     }
     public class Caminhao extends Transporte{
         calculaFrete(peso, valor){
-            return (peso*0,12)+ (valor*0,30);   
+            if (valor<40000){
+                int desc = (peso*0,12)+ (valor*0,30)
+                return desc -= desc * 0,25 
+            }
+            else{
+                return (peso*0,12)+ (valor*0,30);  
+            }
+              
         }
         
     }
