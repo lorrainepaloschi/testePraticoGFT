@@ -29,9 +29,17 @@ public class exe4 {
 
     }
     public class Vagao extends Transporte{
-        
+        calculaFrete(peso, valor){
+            if (peso<15000){
+                return (peso*0,2)+(valor*0,1)+ 5000; 
+            }
+            return (peso*0,2)+(valor*0,1);   
+        }
     }
     public class Caminhao extends Transporte{
-
+        calculaFrete(peso, valor){
+            return (peso*0,12)+ (valor*0,30);   
+        }
+        
     }
 }
