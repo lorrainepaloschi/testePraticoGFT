@@ -60,17 +60,17 @@ public class exe3 {
             return x*y;
         }
     }
-    public static void main(String[] args){
-        Scanner recebe = new Scanner(System.in);
-        int x = recebe.nextInt();
-        int y = recebe.nextInt();
 
-        Soma soma = new efetuarOperacao(x,y);
-        Subtracao sub = new efetuarOperacao();
-        Divisao div = new efetuarOperacao();
-        Multiplicacao mult = new efetuarOperacao();
-
-        System.out.println("Soma = " +soma+"\nSubtração = " +sub+ "\nDivisão = " +div+ "\nMultiplicação = " + mult);
-    }
 }
+public static void main(String[] args){
+    Scanner recebe = new Scanner(System.in);
+    int x = recebe.nextInt();
+    int y = recebe.nextInt();
 
+    Soma soma = new efetuarOperacao(x,y);
+    Subtracao sub = new efetuarOperacao(x,y);
+    Divisao div = new efetuarOperacao(x,y);
+    Multiplicacao mult = new efetuarOperacao(x,y);
+
+    System.out.println("Soma = " +soma+"\nSubtração = " +sub+ "\nDivisão = " +div+ "\nMultiplicação = " + mult);
+}
