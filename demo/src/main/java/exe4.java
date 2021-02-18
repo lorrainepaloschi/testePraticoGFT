@@ -25,6 +25,11 @@ public class exe4 {
             this.peso = peso;
         }
 
+        public class Vagao extends Transporte{
 
+        }
+        public class Caminhao extends Transporte{
+            
+        }
     }
 }
